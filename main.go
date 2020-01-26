@@ -34,12 +34,9 @@ import (
 	//userServ "github.com/natnaelawel/tenahubapi/user/service"
 	feedBackRepo "github.com/natnaelawel/tenahubapi/comment/repository"
 	feedBackServ "github.com/natnaelawel/tenahubapi/comment/service"
-
 	"github.com/natnaelawel/tenahubapi/user/repository"
-
 	"github.com/julienschmidt/httprouter"
 	"github.com/natnaelawel/tenahubapi/user/service"
-
 	"github.com/jinzhu/gorm"
 )
 
@@ -47,19 +44,19 @@ import (
 func main()  {
 	//dbconn, err := gorm.Open("postgres", "postgres://postgres:0912345678@localhost/tenahub?sslmode=disable")
 	dbconn, err := gorm.Open("postgres", os.Getenv("DATABASE_URL"))
-	
+
 	if err != nil {
 		panic(err)
 	}
 
 	defer dbconn.Close()
 
-	errs := dbconn.CreateTable(&entity.Admin{}, &entity.Agent{}, &entity.Comment{}, &entity.Hcrating{}, &entity.HealthCenter{}, &entity.Rating{},&entity.Service{}, &entity.Session{}, &entity.User{},&entity.UserComment{}).GetErrors()
-	fmt.Println(errs)
+	// errs := dbconn.CreateTable(&entity.Admin{}, &entity.Agent{}, &entity.Comment{}, &entity.Hcrating{}, &entity.HealthCenter{}, &entity.Rating{},&entity.Service{}, &entity.Session{}, &entity.User{},&entity.UserComment{}).GetErrors()
+	// fmt.Println(errs)
 	
-	if len(errs) > 0 {
-		panic(errs)
-	}
+	// if len(errs) > 0 {
+	// 	panic(errs)
+	// }
 
 	userRepo := repository.NewUserGormRepo(dbconn)
 	userServ := service.NewUserService(userRepo)
