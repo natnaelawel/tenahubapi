@@ -65,4 +65,22 @@ func (adm *AdminGormRepo) UpdateAdmin(adminData *entity.Admin) (*entity.Admin, [
 
 }
 
-
+func (adm *AdminGormRepo) StoreAdmin(adminData *entity.Admin) (*entity.Admin, []error) {
+	admin := adminData
+	errs := adm.conn.Create(admin).GetErrors()
+	if len(errs) > 0 {
+		return nil, errs
+	}
+	return admin, errs
+}
+func (adm *AdminGormRepo) DeleteAdmin(id uint) (*entity.Admin, []error) {
+	admin, errs := adm.AdminById(id)
+	if len(errs) > 0 {
+		return nil, errs
+	}
+	errs = adm.conn.Delete(admin, id).GetErrors()
+	if len(errs) > 0 {
+		return nil, errs
+	}
+	return admin, errs
+}

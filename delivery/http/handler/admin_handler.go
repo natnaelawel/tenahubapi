@@ -110,6 +110,58 @@ func (uh *AdminHandler) GetAdmin(w http.ResponseWriter, r *http.Request, _ httpr
 	return
 }
 
+
+func (adm *AdminHandler) PostAdmin(w http.ResponseWriter, r *http.Request, ps httprouter.Params) {
+	header := w.Header()
+	header.Add("Access-Control-Allow-Origin", "*")
+	header.Add("Access-Control-Allow-Methods", "DELETE, POST, GET, OPTIONS")
+	header.Add("Access-Control-Allow-Headers", "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With")
+	header.Add("Access-Control-Max-Age","86400")
+
+
+	l := r.ContentLength
+	body := make([]byte, l)
+	r.Body.Read(body)
+	adminData := &entity.Admin{}
+
+	err := json.Unmarshal(body, adminData)
+
+	if err != nil {
+		w.Header().Set("Content-Type", "application/json")
+		http.Error(w, http.StatusText(http.StatusNotFound), http.StatusNotFound)
+		return
+	}
+	_, errs := adm.adminService.StoreAdmin(adminData)
+
+	if len(errs) > 0 {
+		w.Header().Set("Content-Type", "application/json")
+		http.Error(w, http.StatusText(http.StatusNotFound), http.StatusNotFound)
+		return
+	}
+	w.WriteHeader(http.StatusCreated)
+	return
+}
+func (adm *AdminHandler) DeleteAdmin(w http.ResponseWriter, r *http.Request, ps httprouter.Params) {
+	id, err := strconv.Atoi(ps.ByName("id"))
+	if err != nil {
+		w.Header().Set("Content-Type", "application/json")
+		http.Error(w, http.StatusText(http.StatusNotFound), http.StatusNotFound)
+		return
+	}
+	_, errs := adm.adminService.DeleteAdmin(uint(id))
+
+	if len(errs) > 0 {
+		w.Header().Set("Content-Type", "application/json")
+		http.Error(w, http.StatusText(http.StatusNotFound), http.StatusNotFound)
+		return
+	}
+	w.Header().Set("Content-Type", "application/json")
+	w.Header().Set("Access-Control-Allow-Origin", "*")
+
+	w.WriteHeader(http.StatusOK)
+	return
+}
+
 func HashPassword(password string) (string, error) {
 	bytes, err := bcrypt.GenerateFromPassword([]byte(password), 14)
 	return string(bytes), err

@@ -31,7 +31,14 @@ func (adm *MockAdminGormRepo) AdminById(id uint) (*entity.Admin, []error) {
 func (adm *MockAdminGormRepo) UpdateAdmin(adminData *entity.Admin) (*entity.Admin, []error) {
 	admin := adminData
 	return admin, []error{nil}
-
+}
+func (adm *MockAdminGormRepo) StoreAdmin(adminData *entity.Admin) (*entity.Admin, []error) {
+	admin := adminData
+	return admin, nil
+}
+func (adm *MockAdminGormRepo) DeleteAdmin(id uint) (*entity.Admin, []error) {
+	admin, errs := adm.AdminById(id)
+	return admin, errs
 }
 
 
