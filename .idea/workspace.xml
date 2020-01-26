@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c34de790-5766-4fbc-a012-4ff27e106efe" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GOROOT" path="/usr/lib/go-1.10" />
+  <component name="ProjectId" id="1WwDPSdcguBVSe9ngESr0hKmgWq" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="278" y="55" width="800" height="677" key="#GOPATH" timestamp="1580052953520">
+      <screen x="0" y="22" width="1366" height="746" />
+    </state>
+    <state x="278" y="55" width="800" height="677" key="#GOPATH/0.22.1366.746@0.22.1366.746" timestamp="1580052953520" />
+    <state x="278" y="55" width="800" height="677" key="#Go_Modules_(vgo)" timestamp="1580052198973">
+      <screen x="0" y="22" width="1366" height="746" />
+    </state>
+    <state x="278" y="55" width="800" height="677" key="#Go_Modules_(vgo)/0.22.1366.746@0.22.1366.746" timestamp="1580052198973" />
+    <state x="440" y="153" key="FileChooserDialogImpl" timestamp="1580052943258">
+      <screen x="0" y="22" width="1366" height="746" />
+    </state>
+    <state x="440" y="153" key="FileChooserDialogImpl/0.22.1366.746@0.22.1366.746" timestamp="1580052943258" />
+  </component>
+</project>
