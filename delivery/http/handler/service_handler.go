@@ -5,8 +5,8 @@ import (
 	"github.com/julienschmidt/httprouter"
 	"strconv"
 	"encoding/json"
-	"github.com/natnaelawel/tenahubapi/api/entity"
-	"github.com/natnaelawel/tenahubapi/api/service"
+	"github.com/natnaelawel/tenahubapi/entity"
+	"github.com/natnaelawel/tenahubapi/service"
 )
 
 type ServiceHandler struct {

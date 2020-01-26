@@ -1,8 +1,8 @@
 package service
 
 import (
-	"github.com/natnaelawel/tenahubapi/api/entity"
-	"github.com/natnaelawel/tenahubapi/api/admin"
+	"github.com/natnaelawel/tenahubapi/entity"
+	"github.com/natnaelawel/tenahubapi/admin"
 )
 
 type AdminService struct {

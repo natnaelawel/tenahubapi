@@ -1,7 +1,7 @@
 package comment
 
 import (
-	"github.com/natnaelawel/tenahubapi/api/entity"
+	"github.com/natnaelawel/tenahubapi/entity"
 )
 
 // CommentRepository is

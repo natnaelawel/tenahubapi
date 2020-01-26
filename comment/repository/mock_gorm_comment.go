@@ -1,9 +1,9 @@
 package repository
 
 import (
-	"github.com/natnaelawel/tenahubapi/api/entity"
+	"github.com/natnaelawel/tenahubapi/entity"
 	"github.com/jinzhu/gorm"
-	"github.com/natnaelawel/tenahubapi/api/comment"
+	"github.com/natnaelawel/tenahubapi/comment"
 	"errors"
 )
 

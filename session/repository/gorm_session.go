@@ -2,8 +2,8 @@ package repository
 
 import (
 	"github.com/jinzhu/gorm"
-	"github.com/natnaelawel/tenahubapi/api/entity"
-	"github.com/natnaelawel/tenahubapi/api/session"
+	"github.com/natnaelawel/tenahubapi/entity"
+	"github.com/natnaelawel/tenahubapi/session"
 )
 
 // SessionGormRepo implements user.SessionRepository interface

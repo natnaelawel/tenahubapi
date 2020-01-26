@@ -5,8 +5,8 @@ import (
 	"github.com/julienschmidt/httprouter"
 	"strconv"
 	"encoding/json"
-	"github.com/natnaelawel/tenahubapi/api/admin"
-	"github.com/natnaelawel/tenahubapi/api/entity"
+	"github.com/natnaelawel/tenahubapi/admin"
+	"github.com/natnaelawel/tenahubapi/entity"
 	"golang.org/x/crypto/bcrypt"
 )
 

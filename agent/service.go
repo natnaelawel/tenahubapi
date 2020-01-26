@@ -1,6 +1,6 @@
 package agent
 
-import "github.com/natnaelawel/tenahubapi/api/entity"
+import "github.com/natnaelawel/tenahubapi/entity"
 
 type AgentService interface {
 	AgentById(id uint) (*entity.Agent, []error)

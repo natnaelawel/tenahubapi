@@ -1,6 +1,6 @@
 package session
 
-import "github.com/natnaelawel/tenahubapi/api/entity"
+import "github.com/natnaelawel/tenahubapi/entity"
 
 // SessionRepository specifies logged in user session related database operations
 type SessionRepository interface {

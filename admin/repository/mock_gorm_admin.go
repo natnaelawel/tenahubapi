@@ -3,8 +3,8 @@ package repository
 import (
 	"errors"
 	"github.com/jinzhu/gorm"
-	"github.com/natnaelawel/tenahubapi/api/admin"
-	"github.com/natnaelawel/tenahubapi/api/entity"
+	"github.com/natnaelawel/tenahubapi/admin"
+	"github.com/natnaelawel/tenahubapi/entity"
 )
 
 type MockAdminGormRepo struct {

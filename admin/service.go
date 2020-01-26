@@ -1,6 +1,6 @@
 package admin
 
-import "github.com/natnaelawel/tenahubapi/api/entity"
+import "github.com/natnaelawel/tenahubapi/entity"
 
 type AdminService interface {
 	AdminById(id uint)(*entity.Admin, []error)

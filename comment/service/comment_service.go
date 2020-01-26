@@ -1,8 +1,8 @@
 package repository
 
 import (
-	"github.com/natnaelawel/tenahubapi/api/comment"
-	"github.com/natnaelawel/tenahubapi/api/entity"
+	"github.com/natnaelawel/tenahubapi/comment"
+	"github.com/natnaelawel/tenahubapi/entity"
 )
 
 // CommentService implements comment.CommentRepository

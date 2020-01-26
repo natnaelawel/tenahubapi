@@ -5,8 +5,8 @@ import (
 	"github.com/julienschmidt/httprouter"
 	"strconv"
 	"encoding/json"
-	"github.com/natnaelawel/tenahubapi/api/healthcenter"
-	"github.com/natnaelawel/tenahubapi/api/entity"
+	"github.com/natnaelawel/tenahubapi/healthcenter"
+	"github.com/natnaelawel/tenahubapi/entity"
 	"fmt"
 )
 

@@ -1,7 +1,7 @@
 package rating
 
 import (
-	"github.com/natnaelawel/tenahubapi/api/entity"
+	"github.com/natnaelawel/tenahubapi/entity"
 )
 
 // RatingRepository is

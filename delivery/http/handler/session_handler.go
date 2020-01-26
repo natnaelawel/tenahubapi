@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"github.com/julienschmidt/httprouter"
 	"encoding/json"
-	"github.com/natnaelawel/tenahubapi/api/entity"
+	"github.com/natnaelawel/tenahubapi/entity"
 	"fmt"
 )
 

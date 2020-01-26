@@ -1,6 +1,6 @@
 package healthcenter
 
-import "github.com/natnaelawel/tenahubapi/api/entity"
+import "github.com/natnaelawel/tenahubapi/entity"
 
 type HealthCenterService interface {
 	SingleHealthCenter(id uint) (*entity.HealthCenter, []error)

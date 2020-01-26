@@ -1,8 +1,8 @@
 package service
 
 import (
-	"github.com/natnaelawel/tenahubapi/api/entity"
-	"github.com/natnaelawel/tenahubapi/api/agent"
+	"github.com/natnaelawel/tenahubapi/entity"
+	"github.com/natnaelawel/tenahubapi/agent"
 )
 
 type AgentService struct {
