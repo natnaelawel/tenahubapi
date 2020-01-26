@@ -1,7 +1,7 @@
 package handler
 
 import (
-	"github.com/natnaelawel/tenahubapi/api/session"
+	"github.com/natnaelawel/tenahubapi/session"
 	"net/http"
 	"github.com/julienschmidt/httprouter"
 	"encoding/json"
