@@ -1,8 +1,7 @@
 package main
 
 import (
-	"fmt"
-	"github.com/natnaelawel/tenahubapi/entity"
+
 	// "fmt"
 	"net/http"
 	"os"
