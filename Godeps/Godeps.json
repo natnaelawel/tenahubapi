@@ -2,6 +2,9 @@
 	"ImportPath": "github.com/natnaelawel/tenahubapi/api",
 	"GoVersion": "go1.10",
 	"GodepVersion": "v80",
+	"Packages": [
+		"./..."
+	],
 	"Deps": [
 		{
 			"ImportPath": "github.com/jinzhu/gorm",
