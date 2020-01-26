@@ -7,10 +7,10 @@ import (
 	"net/http"
 	"io/ioutil"
 	"encoding/json"
-	ratingRepo "github.com/TenaHub/api/rating/repository"
-	ratingServ "github.com/TenaHub/api/rating/service"
-	"github.com/TenaHub/api/entity"
-	"github.com/TenaHub/api/delivery/http/handler"
+	ratingRepo "github.com/natnaelawel/tenahubapi/api/rating/repository"
+	ratingServ "github.com/natnaelawel/tenahubapi/api/rating/service"
+	"github.com/natnaelawel/tenahubapi/api/entity"
+	"github.com/natnaelawel/tenahubapi/api/delivery/http/handler"
 	"reflect"
 )
 

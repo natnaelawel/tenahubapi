@@ -3,7 +3,7 @@ package repository
 import (
 	"fmt"
 	"github.com/lib/pq"
-	"github.com/TenaHub/api/entity"
+	"github.com/natnaelawel/tenahubapi/api/entity"
 	"github.com/jinzhu/gorm"
 	"golang.org/x/crypto/bcrypt"
 )

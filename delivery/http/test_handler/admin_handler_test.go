@@ -8,10 +8,10 @@ import (
 	"net/http"
 	"io/ioutil"
 	"encoding/json"
-	adminRepo "github.com/TenaHub/api/admin/repository"
-	adminServ "github.com/TenaHub/api/admin/service"
-	"github.com/TenaHub1/api/delivery/http/handler"
-	"github.com/TenaHub/api/entity"
+	adminRepo "github.com/natnaelawel/tenahubapi/api/admin/repository"
+	adminServ "github.com/natnaelawel/tenahubapi/api/admin/service"
+	"github.com/natnaelawel/tenahubapi/api/delivery/http/handler"
+	"github.com/natnaelawel/tenahubapi/api/entity"
 	"reflect"
 )
 

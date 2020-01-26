@@ -2,8 +2,8 @@ package repository
 
 import (
 	"github.com/jinzhu/gorm"
-	"github.com/TenaHub/api/entity"
-	"github.com/TenaHub/api/service"
+	"github.com/natnaelawel/tenahubapi/api/entity"
+	"github.com/natnaelawel/tenahubapi/api/service"
 )
 
 type MockServiceGormRepo struct {

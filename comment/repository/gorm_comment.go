@@ -3,9 +3,9 @@ package repository
 import (
 	"fmt"
 
-	"github.com/TenaHub/api/entity"
+	"github.com/natnaelawel/tenahubapi/api/entity"
 	"github.com/jinzhu/gorm"
-	"github.com/TenaHub/api/comment"
+	"github.com/natnaelawel/tenahubapi/api/comment"
 )
 
 // CommentGormRepo implements comment.CommentRepository

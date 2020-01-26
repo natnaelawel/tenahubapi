@@ -1,9 +1,9 @@
 package repository
 
 import (
-	"github.com/TenaHub/api/entity"
+	"github.com/natnaelawel/tenahubapi/api/entity"
 	"github.com/jinzhu/gorm"
-	"github.com/TenaHub/api/user"
+	"github.com/natnaelawel/tenahubapi/api/user"
 )
 
 // UserGormRepo is repository implements user.UserRepository

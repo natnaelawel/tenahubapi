@@ -7,10 +7,10 @@ import (
 	"net/http"
 	"io/ioutil"
 	"encoding/json"
-	healthCenterRepo "github.com/TenaHub/api/healthcenter/repository"
-	healthCenterServ "github.com/TenaHub/api/healthcenter/service"
-	"github.com/TenaHub/api/entity"
-	"github.com/TenaHub/api/delivery/http/handler"
+	healthCenterRepo "github.com/natnaelawel/tenahubapi/api/healthcenter/repository"
+	healthCenterServ "github.com/natnaelawel/tenahubapi/api/healthcenter/service"
+	"github.com/natnaelawel/tenahubapi/api/entity"
+	"github.com/natnaelawel/tenahubapi/api/delivery/http/handler"
 	"reflect"
 )
 

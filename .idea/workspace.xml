@@ -1,14 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c34de790-5766-4fbc-a012-4ff27e106efe" name="Default Changelist" comment="" />
+    <list default="true" id="c34de790-5766-4fbc-a012-4ff27e106efe" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/admin/repository.go" beforeDir="false" afterPath="$PROJECT_DIR$/admin/repository.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/repository/mock_gorm_admin.go" beforeDir="false" afterPath="$PROJECT_DIR$/admin/repository/mock_gorm_admin.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/admin/service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/service/admin_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/admin/service/admin_service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/repository.go" beforeDir="false" afterPath="$PROJECT_DIR$/agent/repository.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/repository/gorm_agent.go" beforeDir="false" afterPath="$PROJECT_DIR$/agent/repository/gorm_agent.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/agent/service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/service/agent_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/agent/service/agent_service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comment/repository.go" beforeDir="false" afterPath="$PROJECT_DIR$/comment/repository.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comment/repository/gorm_comment.go" beforeDir="false" afterPath="$PROJECT_DIR$/comment/repository/gorm_comment.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comment/repository/mock_gorm_comment.go" beforeDir="false" afterPath="$PROJECT_DIR$/comment/repository/mock_gorm_comment.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comment/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/comment/service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comment/service/comment_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/comment/service/comment_service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/delivery/http/handler/admin_handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/delivery/http/handler/admin_handler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/delivery/http/handler/agent_handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/delivery/http/handler/agent_handler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/delivery/http/handler/comment_handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/delivery/http/handler/comment_handler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/delivery/http/handler/healthcenter_handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/delivery/http/handler/healthcenter_handler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/delivery/http/handler/rating_handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/delivery/http/handler/rating_handler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/delivery/http/handler/service_handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/delivery/http/handler/service_handler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/delivery/http/handler/session_handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/delivery/http/handler/session_handler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/delivery/http/handler/user_handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/delivery/http/handler/user_handler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/delivery/http/test_handler/admin_handler_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/delivery/http/test_handler/admin_handler_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/delivery/http/test_handler/agent_handler_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/delivery/http/test_handler/agent_handler_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/delivery/http/test_handler/comment_handler_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/delivery/http/test_handler/comment_handler_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/delivery/http/test_handler/healthcenter_handler_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/delivery/http/test_handler/healthcenter_handler_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/delivery/http/test_handler/rating_handler_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/delivery/http/test_handler/rating_handler_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/delivery/http/test_handler/service_handler_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/delivery/http/test_handler/service_handler_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/delivery/http/test_handler/user_handler_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/delivery/http/test_handler/user_handler_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/healthcenter/repository.go" beforeDir="false" afterPath="$PROJECT_DIR$/healthcenter/repository.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/healthcenter/repository/gorm_hc.go" beforeDir="false" afterPath="$PROJECT_DIR$/healthcenter/repository/gorm_hc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/healthcenter/repository/mock_gorm_hc.go" beforeDir="false" afterPath="$PROJECT_DIR$/healthcenter/repository/mock_gorm_hc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/healthcenter/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/healthcenter/service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/healthcenter/service/healthcenter_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/healthcenter/service/healthcenter_service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rating/repository.go" beforeDir="false" afterPath="$PROJECT_DIR$/rating/repository.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rating/repository/gorm_rating.go" beforeDir="false" afterPath="$PROJECT_DIR$/rating/repository/gorm_rating.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rating/repository/mock_gorm_rating.go" beforeDir="false" afterPath="$PROJECT_DIR$/rating/repository/mock_gorm_rating.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rating/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/rating/service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rating/service/rating_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/rating/service/rating_service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/repository.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/repository.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/repository/gorm_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/repository/gorm_service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/repository/mock_gorm_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/repository/mock_gorm_service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service/service_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/service/service_service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/session/repository.go" beforeDir="false" afterPath="$PROJECT_DIR$/session/repository.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/session/repository/gorm_session.go" beforeDir="false" afterPath="$PROJECT_DIR$/session/repository/gorm_session.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/session/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/session/service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/session/service/session_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/session/service/session_service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/repository.go" beforeDir="false" afterPath="$PROJECT_DIR$/user/repository.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/repository/gorm_user.go" beforeDir="false" afterPath="$PROJECT_DIR$/user/repository/gorm_user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/repository/mock_gorm_user.go" beforeDir="false" afterPath="$PROJECT_DIR$/user/repository/mock_gorm_user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/user/service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/service/user_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/user/service/user_service.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="GOROOT" path="/usr/lib/go-1.10" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1WwDPSdcguBVSe9ngESr0hKmgWq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -16,6 +73,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
     <property name="configurable.Module.GOPATH.is.expanded" value="true" />

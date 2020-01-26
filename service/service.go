@@ -1,6 +1,6 @@
 package service
 
-import "github.com/TenaHub/api/entity"
+import "github.com/natnaelawel/tenahubapi/api/entity"
 
 type ServicesService interface {
 	Service(id uint) (*entity.Service, []error)

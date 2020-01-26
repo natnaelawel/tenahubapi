@@ -1,5 +1,5 @@
 package admin
-import "github.com/TenaHub/api/entity"
+import "github.com/natnaelawel/tenahubapi/api/entity"
 
 type AdminRepository interface {
 	AdminById(id uint)(*entity.Admin, []error)

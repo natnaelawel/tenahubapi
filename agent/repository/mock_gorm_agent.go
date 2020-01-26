@@ -2,10 +2,10 @@ package repository
 
 import (
 	"github.com/jinzhu/gorm"
-	"github.com/TenaHub/api/entity"
-	"github.com/TenaHub/api/agent"
+	"github.com/natnaelawel/tenahubapi/api/entity"
+	"github.com/natnaelawel/tenahubapi/api/agent"
 	"errors"
-	"github.com/TenaHub/api/delivery/http/handler"
+	"github.com/natnaelawel/tenahubapi/api/delivery/http/handler"
 )
 
 type MockAgentGormRepo struct {

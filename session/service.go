@@ -1,6 +1,6 @@
 package session
 
-import "github.com/TenaHub/api/entity"
+import "github.com/natnaelawel/tenahubapi/api/entity"
 
 // SessionService specifies logged in user session related service
 type SessionService interface {

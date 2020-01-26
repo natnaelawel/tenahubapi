@@ -7,10 +7,10 @@ import (
 	"net/http"
 	"io/ioutil"
 	"encoding/json"
-	commentRepo "github.com/TenaHub/api/comment/repository"
-	commentServ "github.com/TenaHub/api/comment/service"
-	"github.com/TenaHub/api/entity"
-	"github.com/TenaHub/api/delivery/http/handler"
+	commentRepo "github.com/natnaelawel/tenahubapi/api/comment/repository"
+	commentServ "github.com/natnaelawel/tenahubapi/api/comment/service"
+	"github.com/natnaelawel/tenahubapi/api/entity"
+	"github.com/natnaelawel/tenahubapi/api/delivery/http/handler"
 	"reflect"
 )
 

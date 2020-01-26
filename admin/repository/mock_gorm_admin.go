@@ -2,8 +2,8 @@ package repository
 
 import (
 	"github.com/jinzhu/gorm"
-	"github.com/TenaHub/api/admin"
-	"github.com/TenaHub/api/entity"
+	"github.com/natnaelawel/tenahubapi/api/admin"
+	"github.com/natnaelawel/tenahubapi/api/entity"
 	"errors"
 )
 
