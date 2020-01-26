@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c34de790-5766-4fbc-a012-4ff27e106efe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/admin/repository.go" beforeDir="false" afterPath="$PROJECT_DIR$/admin/repository.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/repository/gorm_admin.go" beforeDir="false" afterPath="$PROJECT_DIR$/admin/repository/gorm_admin.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/repository/mock_gorm_admin.go" beforeDir="false" afterPath="$PROJECT_DIR$/admin/repository/mock_gorm_admin.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/admin/service.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/service/admin_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/admin/service/admin_service.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delivery/http/handler/admin_handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/delivery/http/handler/admin_handler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -110,6 +110,8 @@ func main()  {
 	router.GET("/v1/admin/:id", adminHandler.GetSingleAdmin)
 	router.POST("/v1/admin", adminHandler.GetAdmin)
 	router.PUT("/v1/admin/:id", adminHandler.PutAdmin)
+	router.POST("v1/admins",adminHandler.PostAdmin)
+	router.DELETE("v1/admin",adminHandler.DeleteAdmin)
 	router.GET("/v1/agent/:id", agentHandler.GetSingleAgent)
 
 	router.GET("/v1/agent", agentHandler.GetAgents)
