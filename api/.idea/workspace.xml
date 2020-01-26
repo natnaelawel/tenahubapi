@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c34de790-5766-4fbc-a012-4ff27e106efe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Godeps/Godeps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Godeps/Godeps.json" afterDir="false" />
-    </list>
+    <list default="true" id="c34de790-5766-4fbc-a012-4ff27e106efe" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,7 +28,8 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="go.vendoring.notification.had.been.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
   </component>
   <component name="RunManager">
     <configuration name="go build github.com/natnaelawel/tenahubapi/api" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -73,14 +71,10 @@
       <screen x="0" y="22" width="1366" height="746" />
     </state>
     <state x="278" y="55" width="800" height="677" key="#Go_Modules_(vgo)/0.22.1366.746@0.22.1366.746" timestamp="1580052198973" />
-    <state x="347" y="197" width="662" height="394" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1580062662871">
+    <state x="440" y="153" key="FileChooserDialogImpl" timestamp="1580062644307">
       <screen x="0" y="22" width="1366" height="746" />
     </state>
-    <state x="347" y="197" width="662" height="394" key="#com.intellij.fileTypes.FileTypeChooser/0.22.1366.746@0.22.1366.746" timestamp="1580062662871" />
-    <state x="440" y="153" key="FileChooserDialogImpl" timestamp="1580052943258">
-      <screen x="0" y="22" width="1366" height="746" />
-    </state>
-    <state x="440" y="153" key="FileChooserDialogImpl/0.22.1366.746@0.22.1366.746" timestamp="1580052943258" />
+    <state x="440" y="153" key="FileChooserDialogImpl/0.22.1366.746@0.22.1366.746" timestamp="1580062644307" />
     <state width="1314" height="151" key="GridCell.Tab.0.bottom" timestamp="1580056109817">
       <screen x="0" y="22" width="1366" height="746" />
     </state>

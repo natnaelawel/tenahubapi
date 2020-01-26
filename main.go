@@ -1,6 +1,8 @@
 package main
 
 import (
+	"fmt"
+	"github.com/natnaelawel/tenahubapi/entity"
 	// "fmt"
 	"net/http"
 	"os"
@@ -52,12 +54,12 @@ func main()  {
 
 	defer dbconn.Close()
 
-	//errs := dbconn.CreateTable(&entity.Comment{}).GetErrors()
-	//fmt.Println(errs)
-	//
-	//if len(errs) > 0 {
-	//	panic(errs)
-	//}
+	errs := dbconn.CreateTable(&entity.Admin{}, &entity.Agent{}, &entity.Comment{}, &entity.Hcrating{}, &entity.HealthCenter{}, &entity.Rating{},&entity.Service{}, &entity.Session{}, &entity.User{},&entity.UserComment{}).GetErrors()
+	fmt.Println(errs)
+	
+	if len(errs) > 0 {
+		panic(errs)
+	}
 
 	userRepo := repository.NewUserGormRepo(dbconn)
 	userServ := service.NewUserService(userRepo)
