@@ -1,11 +1,11 @@
 package repository
 
 import (
+	"fmt"
 	"github.com/jinzhu/gorm"
 	"github.com/natnaelawel/tenahubapi/api/admin"
-	"github.com/natnaelawel/tenahubapi/api/entity"
 	"github.com/natnaelawel/tenahubapi/api/delivery/http/handler"
-	"fmt"
+	"github.com/natnaelawel/tenahubapi/api/entity"
 )
 
 type AdminGormRepo struct {

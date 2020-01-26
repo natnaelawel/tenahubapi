@@ -3,14 +3,12 @@ package main
 import (
 	// "fmt"
 	"net/http"
-
+	"os"
 	// "github.com/tenahubapi/api/entity"
-
 	_ "github.com/jinzhu/gorm/dialects/postgres"
-
 	"github.com/natnaelawel/tenahubapi/api/delivery/http/handler"
 
-	hcserviceRepository "github.com/natnaelawel/tenahubapi/api/admin"
+	hcserviceRepository "github.com/natnaelawel/tenahubapi/api/service/repository"
 	hcserviceService "github.com/natnaelawel/tenahubapi/api/service/service"
 
 	commentRepository "github.com/natnaelawel/tenahubapi/api/comment/repository"
@@ -37,8 +35,8 @@ import (
 
 	"github.com/natnaelawel/tenahubapi/api/user/repository"
 
-	"github.com/natnaelawel/tenahubapi/api/user/service"
 	"github.com/julienschmidt/httprouter"
+	"github.com/natnaelawel/tenahubapi/api/user/service"
 
 	"github.com/jinzhu/gorm"
 )
@@ -46,7 +44,7 @@ import (
 
 func main()  {
 	//dbconn, err := gorm.Open("postgres", "postgres://postgres:0912345678@localhost/tenahub?sslmode=disable")
-	dbconn, err := gorm.Open("postgres", "postgres://postgres:password@localhost/tenahubdb?sslmode=disable")
+	dbconn, err := gorm.Open("postgres", os.Getenv("DATABASE_URL"))
 	
 	if err != nil {
 		panic(err)
@@ -188,8 +186,7 @@ func main()  {
 	router.GET("/v1/session", sesHandl.GetSession)
 	router.POST("/v1/session", sesHandl.PostSession)
 	router.DELETE("/v1/session/:uuid", sesHandl.DeleteSession)
-	// http.ListenAndServe(":8181", router)
-	err := http.ListenAndServe(":"+os.Getenv("PORT"), router)
+	err = http.ListenAndServe(":"+os.Getenv("PORT"), router)
 	if err != nil {
 		panic(err)
 	}

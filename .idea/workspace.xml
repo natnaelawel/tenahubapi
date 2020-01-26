@@ -2,58 +2,99 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c34de790-5766-4fbc-a012-4ff27e106efe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/admin/repository.go" beforeDir="false" afterPath="$PROJECT_DIR$/admin/repository.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/repository/gorm_admin.go" beforeDir="false" afterPath="$PROJECT_DIR$/admin/repository/gorm_admin.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/repository/mock_gorm_admin.go" beforeDir="false" afterPath="$PROJECT_DIR$/admin/repository/mock_gorm_admin.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/admin/service.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/service/admin_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/admin/service/admin_service.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agent/repository.go" beforeDir="false" afterPath="$PROJECT_DIR$/agent/repository.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agent/repository/gorm_agent.go" beforeDir="false" afterPath="$PROJECT_DIR$/agent/repository/gorm_agent.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agent/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/agent/service.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agent/service/agent_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/agent/service/agent_service.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comment/repository.go" beforeDir="false" afterPath="$PROJECT_DIR$/comment/repository.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comment/repository/gorm_comment.go" beforeDir="false" afterPath="$PROJECT_DIR$/comment/repository/gorm_comment.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comment/repository/mock_gorm_comment.go" beforeDir="false" afterPath="$PROJECT_DIR$/comment/repository/mock_gorm_comment.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comment/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/comment/service.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comment/service/comment_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/comment/service/comment_service.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delivery/http/handler/admin_handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/delivery/http/handler/admin_handler.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delivery/http/handler/agent_handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/delivery/http/handler/agent_handler.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delivery/http/handler/comment_handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/delivery/http/handler/comment_handler.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delivery/http/handler/healthcenter_handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/delivery/http/handler/healthcenter_handler.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delivery/http/handler/rating_handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/delivery/http/handler/rating_handler.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delivery/http/handler/service_handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/delivery/http/handler/service_handler.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delivery/http/handler/session_handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/delivery/http/handler/session_handler.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delivery/http/handler/user_handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/delivery/http/handler/user_handler.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delivery/http/test_handler/admin_handler_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/delivery/http/test_handler/admin_handler_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delivery/http/test_handler/agent_handler_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/delivery/http/test_handler/agent_handler_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delivery/http/test_handler/comment_handler_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/delivery/http/test_handler/comment_handler_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delivery/http/test_handler/healthcenter_handler_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/delivery/http/test_handler/healthcenter_handler_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delivery/http/test_handler/rating_handler_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/delivery/http/test_handler/rating_handler_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delivery/http/test_handler/service_handler_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/delivery/http/test_handler/service_handler_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delivery/http/test_handler/user_handler_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/delivery/http/test_handler/user_handler_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/healthcenter/repository.go" beforeDir="false" afterPath="$PROJECT_DIR$/healthcenter/repository.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/healthcenter/repository/gorm_hc.go" beforeDir="false" afterPath="$PROJECT_DIR$/healthcenter/repository/gorm_hc.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/healthcenter/repository/mock_gorm_hc.go" beforeDir="false" afterPath="$PROJECT_DIR$/healthcenter/repository/mock_gorm_hc.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/healthcenter/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/healthcenter/service.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/healthcenter/service/healthcenter_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/healthcenter/service/healthcenter_service.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rating/repository.go" beforeDir="false" afterPath="$PROJECT_DIR$/rating/repository.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rating/repository/gorm_rating.go" beforeDir="false" afterPath="$PROJECT_DIR$/rating/repository/gorm_rating.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rating/repository/mock_gorm_rating.go" beforeDir="false" afterPath="$PROJECT_DIR$/rating/repository/mock_gorm_rating.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rating/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/rating/service.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rating/service/rating_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/rating/service/rating_service.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/repository.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/repository.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/repository/gorm_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/repository/gorm_service.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/repository/mock_gorm_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/repository/mock_gorm_service.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/service.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service/service_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/service/service_service.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/session/repository.go" beforeDir="false" afterPath="$PROJECT_DIR$/session/repository.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/session/repository/gorm_session.go" beforeDir="false" afterPath="$PROJECT_DIR$/session/repository/gorm_session.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/session/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/session/service.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/session/service/session_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/session/service/session_service.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/repository.go" beforeDir="false" afterPath="$PROJECT_DIR$/user/repository.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/repository/gorm_user.go" beforeDir="false" afterPath="$PROJECT_DIR$/user/repository/gorm_user.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/repository/mock_gorm_user.go" beforeDir="false" afterPath="$PROJECT_DIR$/user/repository/mock_gorm_user.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/user/service.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/service/user_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/user/service/user_service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/repository/mock_gorm_agent.go" beforeDir="false" afterPath="$PROJECT_DIR$/agent/repository/mock_gorm_agent.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/License" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/association.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/callback.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/callback_create.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/callback_delete.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/callback_query.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/callback_query_preload.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/callback_row_query.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/callback_save.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/callback_update.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/dialect.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/dialect_common.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/dialect_mysql.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/dialect_postgres.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/dialect_sqlite3.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/dialects/postgres/postgres.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/errors.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/field.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/go.sum" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/interface.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/join_table_handler.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/logger.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/model.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/model_struct.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/naming.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/scope.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/search.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/test_all.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/utils.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/wercker.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/inflection/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/inflection/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/inflection/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/inflection/inflections.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/jinzhu/inflection/wercker.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/julienschmidt/httprouter/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/julienschmidt/httprouter/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/julienschmidt/httprouter/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/julienschmidt/httprouter/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/julienschmidt/httprouter/path.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/julienschmidt/httprouter/router.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/julienschmidt/httprouter/tree.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/lib/pq/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/lib/pq/.travis.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/lib/pq/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/lib/pq/CONTRIBUTING.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/lib/pq/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/lib/pq/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/lib/pq/TESTS.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/lib/pq/array.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/lib/pq/buf.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/lib/pq/conn.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/lib/pq/conn_go18.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/lib/pq/connector.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/lib/pq/copy.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/lib/pq/doc.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/lib/pq/encode.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/lib/pq/error.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/lib/pq/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/lib/pq/hstore/hstore.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/lib/pq/notice.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/lib/pq/notify.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/lib/pq/oid/doc.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/lib/pq/oid/gen.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/lib/pq/oid/types.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/lib/pq/rows.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/lib/pq/scram/scram.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/lib/pq/ssl.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/lib/pq/ssl_permissions.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/lib/pq/ssl_windows.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/lib/pq/url.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/lib/pq/user_posix.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/lib/pq/user_windows.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/lib/pq/uuid.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/crypto/AUTHORS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/crypto/CONTRIBUTORS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/crypto/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/crypto/PATENTS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/crypto/bcrypt/base64.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/crypto/bcrypt/bcrypt.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/crypto/blowfish/block.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/crypto/blowfish/cipher.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/crypto/blowfish/const.go" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +124,22 @@
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
+  <component name="RunManager">
+    <configuration name="go build github.com/natnaelawel/tenahubapi/api" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="api" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <package value="github.com/natnaelawel/tenahubapi/api" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build github.com/natnaelawel/tenahubapi/api" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
       <list>
@@ -111,5 +168,21 @@
       <screen x="0" y="22" width="1366" height="746" />
     </state>
     <state x="440" y="153" key="FileChooserDialogImpl/0.22.1366.746@0.22.1366.746" timestamp="1580052943258" />
+    <state width="1314" height="151" key="GridCell.Tab.0.bottom" timestamp="1580056109817">
+      <screen x="0" y="22" width="1366" height="746" />
+    </state>
+    <state width="1314" height="151" key="GridCell.Tab.0.bottom/0.22.1366.746@0.22.1366.746" timestamp="1580056109817" />
+    <state width="1314" height="151" key="GridCell.Tab.0.center" timestamp="1580056109816">
+      <screen x="0" y="22" width="1366" height="746" />
+    </state>
+    <state width="1314" height="151" key="GridCell.Tab.0.center/0.22.1366.746@0.22.1366.746" timestamp="1580056109816" />
+    <state width="1314" height="151" key="GridCell.Tab.0.left" timestamp="1580056109815">
+      <screen x="0" y="22" width="1366" height="746" />
+    </state>
+    <state width="1314" height="151" key="GridCell.Tab.0.left/0.22.1366.746@0.22.1366.746" timestamp="1580056109815" />
+    <state width="1314" height="151" key="GridCell.Tab.0.right" timestamp="1580056109816">
+      <screen x="0" y="22" width="1366" height="746" />
+    </state>
+    <state width="1314" height="151" key="GridCell.Tab.0.right/0.22.1366.746@0.22.1366.746" timestamp="1580056109816" />
   </component>
 </project>
