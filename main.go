@@ -1,11 +1,9 @@
 package main
 
 import (
-	"fmt"
 	// "github.com/tenahubapi/entity"
 	_ "github.com/jinzhu/gorm/dialects/postgres"
 	"github.com/natnaelawel/tenahubapi/delivery/http/handler"
-	"github.com/natnaelawel/tenahubapi/entity"
 	"os"
 
 	hcserviceRepository "github.com/natnaelawel/tenahubapi/service/repository"
@@ -28,15 +26,15 @@ import (
 	agentServ "github.com/natnaelawel/tenahubapi/agent/service"
 	healthCenterRepo "github.com/natnaelawel/tenahubapi/healthcenter/repository"
 	healthCenterServ "github.com/natnaelawel/tenahubapi/healthcenter/service"
+	"github.com/jinzhu/gorm"
+	"github.com/julienschmidt/httprouter"
 	//userRepo "github.com/natnaelawel/tenahubapi/user/repository"
 	//userServ "github.com/natnaelawel/tenahubapi/user/service"
 	feedBackRepo "github.com/natnaelawel/tenahubapi/comment/repository"
 	feedBackServ "github.com/natnaelawel/tenahubapi/comment/service"
 	"github.com/natnaelawel/tenahubapi/user/repository"
-	"github.com/julienschmidt/httprouter"
 	"github.com/natnaelawel/tenahubapi/user/service"
 	"net/http"
-	"github.com/jinzhu/gorm"
 )
 
 
@@ -50,12 +48,12 @@ func main()  {
 
 	defer dbconn.Close()
 
-	errs := dbconn.CreateTable(&entity.Admin{}, &entity.Agent{}, &entity.Comment{}, &entity.Hcrating{}, &entity.HealthCenter{}, &entity.Rating{},&entity.Service{}, &entity.Session{}, &entity.User{},&entity.UserComment{}).GetErrors()
-	fmt.Println(errs)
-	
-	if len(errs) > 0 {
-		panic(errs)
-	}
+	//errs := dbconn.CreateTable(&entity.Admin{}, &entity.Agent{}, &entity.Comment{}, &entity.Hcrating{}, &entity.HealthCenter{}, &entity.Rating{},&entity.Service{}, &entity.Session{}, &entity.User{},&entity.UserComment{}).GetErrors()
+	//fmt.Println(errs)
+	//
+	//if len(errs) > 0 {
+	//	panic(errs)
+	//}
 
 	userRepo := repository.NewUserGormRepo(dbconn)
 	userServ := service.NewUserService(userRepo)
