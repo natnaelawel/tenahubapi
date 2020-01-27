@@ -1,11 +1,12 @@
 package main
 
 import (
-
-
+	"fmt"
 	// "github.com/tenahubapi/entity"
 	_ "github.com/jinzhu/gorm/dialects/postgres"
 	"github.com/natnaelawel/tenahubapi/delivery/http/handler"
+	"github.com/natnaelawel/tenahubapi/entity"
+	"os"
 
 	hcserviceRepository "github.com/natnaelawel/tenahubapi/service/repository"
 	hcserviceService "github.com/natnaelawel/tenahubapi/service/service"
@@ -49,12 +50,12 @@ func main()  {
 
 	defer dbconn.Close()
 
-	// errs := dbconn.CreateTable(&entity.Admin{}, &entity.Agent{}, &entity.Comment{}, &entity.Hcrating{}, &entity.HealthCenter{}, &entity.Rating{},&entity.Service{}, &entity.Session{}, &entity.User{},&entity.UserComment{}).GetErrors()
-	// fmt.Println(errs)
+	errs := dbconn.CreateTable(&entity.Admin{}, &entity.Agent{}, &entity.Comment{}, &entity.Hcrating{}, &entity.HealthCenter{}, &entity.Rating{},&entity.Service{}, &entity.Session{}, &entity.User{},&entity.UserComment{}).GetErrors()
+	fmt.Println(errs)
 	
-	// if len(errs) > 0 {
-	// 	panic(errs)
-	// }
+	if len(errs) > 0 {
+		panic(errs)
+	}
 
 	userRepo := repository.NewUserGormRepo(dbconn)
 	userServ := service.NewUserService(userRepo)
@@ -185,10 +186,10 @@ func main()  {
 	router.GET("/v1/session", sesHandl.GetSession)
 	router.POST("/v1/session", sesHandl.PostSession)
 	router.DELETE("/v1/session/:uuid", sesHandl.DeleteSession)
-	//err = http.ListenAndServe(":"+os.Getenv("PORT"), router)
-	//if err != nil {
-	//	panic(err)
-	//}
-	http.ListenAndServe(":8181", router)
+	err = http.ListenAndServe(":"+os.Getenv("PORT"), router)
+	if err != nil {
+		panic(err)
+	}
+	//http.ListenAndServe(":8181", router)
 }
 
