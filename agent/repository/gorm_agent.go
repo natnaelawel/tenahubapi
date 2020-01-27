@@ -47,15 +47,20 @@ func (adm *AgentGormRepo) Agents() ([]entity.Agent, []error) {
 }
 func (adm *AgentGormRepo) UpdateAgent(agentData *entity.Agent) (*entity.Agent, []error) {
 	agent := agentData
-	errs := adm.conn.Save(agent).GetErrors()
-	if len(errs) > 0 {
-		return nil, errs
+	if agentData.Password != "" {
+		agent.Password,_ = handler.HashPassword(agentData.Password)
 	}
-	return agent, errs
+	errs := adm.conn.Model(&agentData).Updates(agent).Error
+	if errs != nil {
+		return nil, []error{errs}
+	}
+
+	return agent, nil
 
 }
 func (adm *AgentGormRepo) StoreAgent(agentData *entity.Agent) (*entity.Agent, []error) {
 	agent := agentData
+	agent.Password,_ = handler.HashPassword(agentData.Password)
 	errs := adm.conn.Create(agent).GetErrors()
 	if len(errs) > 0 {
 		return nil, errs

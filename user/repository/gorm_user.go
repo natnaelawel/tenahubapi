@@ -6,6 +6,7 @@ import (
 	"github.com/natnaelawel/tenahubapi/entity"
 	"github.com/jinzhu/gorm"
 	"golang.org/x/crypto/bcrypt"
+	"github.com/natnaelawel/tenahubapi/delivery/http/handler"
 )
 
 // UserGormRepo is repository implements user.UserRepository
@@ -62,10 +63,12 @@ func (ur *UserGormRepo) UserByID(id uint) (*entity.User, []error) {
 // UpdateUser updates user from the database
 func (ur *UserGormRepo) UpdateUser(user *entity.User) (*entity.User, []error) {
 	usr := user
-	errs := ur.conn.Save(usr).GetErrors()
-
-	if len(errs) > 0 {
-		return nil, errs
+	if user.Password != "" {
+		usr.Password,_ = handler.HashPassword(user.Password)
+	}
+	errs := ur.conn.Model(&user).Updates(usr).Error
+	if errs != nil {
+		return nil, []error{errs}
 	}
 
 	return usr, nil
@@ -91,6 +94,7 @@ func (ur *UserGormRepo) DeleteUser(id uint) (*entity.User, []error) {
 // StoreUser will insert a new user to the database
 func (ur *UserGormRepo) StoreUser(user *entity.User) (*entity.User, []error) {
 	usr := user
+	usr.Password,_ = handler.HashPassword(user.Password)
 	errs := ur.conn.Create(usr).GetErrors()
 
 	for _, err := range errs {

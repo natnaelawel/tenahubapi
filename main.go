@@ -2,9 +2,7 @@ package main
 
 import (
 
-	// "fmt"
-	"net/http"
-	"os"
+
 	// "github.com/tenahubapi/entity"
 	_ "github.com/jinzhu/gorm/dialects/postgres"
 	"github.com/natnaelawel/tenahubapi/delivery/http/handler"
@@ -36,13 +34,14 @@ import (
 	"github.com/natnaelawel/tenahubapi/user/repository"
 	"github.com/julienschmidt/httprouter"
 	"github.com/natnaelawel/tenahubapi/user/service"
+	"net/http"
 	"github.com/jinzhu/gorm"
 )
 
 
 func main()  {
-	//dbconn, err := gorm.Open("postgres", "postgres://postgres:0912345678@localhost/tenahub?sslmode=disable")
-	dbconn, err := gorm.Open("postgres", os.Getenv("DATABASE_URL"))
+	dbconn, err := gorm.Open("postgres", "postgres://postgres:0912345678@localhost/tenahub?sslmode=disable")
+	//dbconn, err := gorm.Open("postgres", os.Getenv("DATABASE_URL"))
 
 	if err != nil {
 		panic(err)
@@ -110,8 +109,8 @@ func main()  {
 	router.GET("/v1/admin/:id", adminHandler.GetSingleAdmin)
 	router.POST("/v1/admin", adminHandler.GetAdmin)
 	router.PUT("/v1/admin/:id", adminHandler.PutAdmin)
-	router.POST("v1/admins",adminHandler.PostAdmin)
-	router.DELETE("v1/admin",adminHandler.DeleteAdmin)
+	router.POST("/v1/admins",adminHandler.PostAdmin)
+	router.DELETE("/v1/admin",adminHandler.DeleteAdmin)
 	router.GET("/v1/agent/:id", agentHandler.GetSingleAgent)
 
 	router.GET("/v1/agent", agentHandler.GetAgents)
@@ -186,9 +185,10 @@ func main()  {
 	router.GET("/v1/session", sesHandl.GetSession)
 	router.POST("/v1/session", sesHandl.PostSession)
 	router.DELETE("/v1/session/:uuid", sesHandl.DeleteSession)
-	err = http.ListenAndServe(":"+os.Getenv("PORT"), router)
-	if err != nil {
-		panic(err)
-	}
+	//err = http.ListenAndServe(":"+os.Getenv("PORT"), router)
+	//if err != nil {
+	//	panic(err)
+	//}
+	http.ListenAndServe(":8181", router)
 }
 
